@@ -67,17 +67,3 @@ Follow these steps to get started:
 - Look for the ✨ gold icon at the bottom‑right of the field — that means WriteRight is active!
 
 ---
-
-## 📸 Screenshots
-
-### Extension Setup
-![Install Instructions](images/install.png)
-
-### Bubble in Action
-![Gold Bubble Next to Text Field](images/bubble.png)
-
-### Tone Selection
-![Tone Options](images/tones.png)
-
-### Email Rewrite Example
-![Rewrite Demo](images/rewrite.png)
