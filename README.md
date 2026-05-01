@@ -7,16 +7,6 @@ Works seamlessly with Gmail, Outlook, LinkedIn, Slack, Notion — every field.
 
 ---
 
-## 🛡️ Badges
-
-![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow?style=for-the-badge&logo=javascript)  
-![Chrome Extension](https://img.shields.io/badge/Platform-Chrome%20Extension-blue?style=for-the-badge&logo=google-chrome)  
-![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)  
-![Status: Active](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)  
-![Pull Requests Welcome](https://img.shields.io/badge/PRs-Welcome-orange?style=for-the-badge)
-
----
-
 ## ✨ Features
 
 ### 🔹 One Bubble. Every Situation.
