@@ -40,7 +40,7 @@ While the Chrome Web Store listing is being finalized, you can load WriteRight m
 Follow these steps to get started:
 
 ### 1. Download the Extension
-- Download the file: **writeright-extension.zip**
+- Download the file: **writeright-extension.zip** form the releases tab.
 - Unzip it to any folder on your computer.
 
 ### 2. Open Chrome Extensions Page
