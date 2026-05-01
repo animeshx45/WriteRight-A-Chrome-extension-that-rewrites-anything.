@@ -1,92 +1,125 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>WriteRight Settings</title>
-    <style>
-      :root { color-scheme: dark; }
-      body {
-        margin: 0;
-        width: 320px;
-        background: #12100d;
-        color: #f4efe4;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        font-size: 13px;
-      }
-      .hdr {
-        display: flex; align-items: center; gap: 8px;
-        padding: 14px 14px 8px;
-        border-bottom: 1px solid rgba(255,255,255,0.06);
-      }
-      .mark {
-        width: 22px; height: 22px; border-radius: 50%;
-        background: radial-gradient(circle at 30% 30%, #ffe27a 0%, #f0b429 55%, #a06800 100%);
-        color: #1a1100; display: flex; align-items: center; justify-content: center;
-        font-weight: 700;
-      }
-      .title { font-weight: 700; letter-spacing: 0.3px; }
-      .sub { color: #9c9683; font-size: 11px; margin-left: auto; }
-      .body { padding: 12px 14px 14px; }
-      label { display: block; font-size: 11px; color: #9c9683; text-transform: uppercase; letter-spacing: 1.2px; margin: 10px 0 6px; }
-      input, select {
-        width: 100%;
-        background: #0d0b08;
-        border: 1px solid rgba(255,255,255,0.1);
-        color: #f4efe4;
-        padding: 8px 10px;
-        border-radius: 8px;
-        font-size: 12px;
-        box-sizing: border-box;
-      }
-      .row { display: flex; gap: 8px; margin-top: 12px; }
-      button {
-        flex: 1;
-        font-size: 12px; font-weight: 600;
-        padding: 8px 12px; border-radius: 8px; cursor: pointer; border: 1px solid transparent;
-      }
-      .primary {
-        background: linear-gradient(180deg, #f3c34a 0%, #d69a12 100%);
-        color: #1a1100;
-      }
-      .ghost {
-        background: transparent; color: #b8b1a0;
-        border-color: rgba(255,255,255,0.1);
-      }
-      .msg { font-size: 11px; margin-top: 8px; color: #9c9683; min-height: 14px; }
-      .ok { color: #9be39b; }
-      .err { color: #ff8a7a; }
-      .hint { color: #7a7460; font-size: 11px; margin-top: 6px; }
-    </style>
-  </head>
-  <body>
-    <div class="hdr">
-      <div class="mark">✦</div>
-      <div class="title">WriteRight</div>
-      <div class="sub">v1.0</div>
-    </div>
-    <div class="body">
-      <label for="backend">Backend URL</label>
-      <input id="backend" type="url" placeholder="https://your-backend.example.com" data-testid="popup-backend-input" />
-      <div class="hint">Default points to WriteRight's hosted API.</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WriteRight Settings</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #12100d;
+      color: #f4efe4;
+      width: 300px;
+    }
 
-      <label for="mode">Default mode</label>
-      <select id="mode" data-testid="popup-mode-select">
-        <option value="professional">💼 Professional</option>
-        <option value="casual">💬 Casual</option>
-        <option value="formal">🏛️ Formal</option>
-        <option value="friendly">😊 Friendly</option>
-        <option value="persuasive">🎯 Persuasive</option>
-        <option value="cold_email">📨 Cold Email</option>
-        <option value="follow_up">🔁 Follow-up</option>
-        <option value="concise">✂️ Concise</option>
-      </select>
+    h1 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-      <div class="row">
-        <button class="ghost" id="test" data-testid="popup-test-btn">Test connection</button>
-        <button class="primary" id="save" data-testid="popup-save-btn">Save</button>
-      </div>
-      <div class="msg" id="msg" data-testid="popup-msg"></div>
-    </div>
-    <script src="popup.js"></script>
-  </body>
+    h1 span {
+      width: 20px; height: 20px; border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #ffe27a 0%, #f0b429 55%, #a06800 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; color: #1a1100;
+    }
+
+    label {
+      font-size: 12px;
+      color: #9c9683;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px 10px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.1);
+      background: #1c1812;
+      color: #e7e0cf;
+      font-size: 13px;
+      margin-bottom: 14px;
+      transition: border-color 0.2s ease, background 0.2s ease;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: rgba(240,180,41,0.75);
+      background: #241e15;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    button {
+      flex: 1;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: filter 0.2s ease, background 0.2s ease;
+    }
+
+    button#save {
+      background: linear-gradient(180deg, #f3c34a 0%, #d69a12 100%);
+      color: #1a1100;
+      box-shadow: 0 4px 12px rgba(240,180,41,0.35);
+    }
+
+    button#save:hover { filter: brightness(1.06); }
+
+    button#test {
+      background: transparent;
+      color: #b8b1a0;
+      border-color: rgba(255,255,255,0.1);
+    }
+
+    button#test:hover { background: rgba(255,255,255,0.05); color: #fff; }
+
+    .msg {
+      margin-top: 12px;
+      font-size: 12px;
+      min-height: 16px;
+      color: #9c9683;
+    }
+    .msg.ok { color: #ffe27a; }
+    .msg.err { color: #ff8a7a; }
+  </style>
+</head>
+<body>
+<h1><span>✦</span> WriteRight Settings</h1>
+
+<label for="mode">Default Mode</label>
+<select id="mode">
+  <option value="professional">Professional</option>
+  <option value="casual">Casual</option>
+  <option value="formal">Formal</option>
+  <option value="friendly">Friendly</option>
+  <option value="persuasive">Persuasive</option>
+  <option value="cold_email">Cold Email</option>
+  <option value="follow_up">Follow-up</option>
+  <option value="concise">Concise</option>
+</select>
+
+<div class="actions">
+  <button id="save">Save</button>
+  <button id="test">Test AI Connection</button>
+</div>
+
+<div id="msg" class="msg"></div>
+
+<script src="popup.js"></script>
+</body>
 </html>
