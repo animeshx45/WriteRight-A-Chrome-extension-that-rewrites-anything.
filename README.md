@@ -1,5 +1,48 @@
-# WriteRight-A-Chrome-extension-that-rewrites-anything.
-A Chrome extension that rewrites anything. Your way. Install WriteRight and a tiny gold ✦ bubble will pop up next to every text field on the web. Pick a tone — Professional, Cold Email, Follow-up, Concise, and five more — and Apply the rewrite with one click. Gmail, Outlook, LinkedIn, Slack, Notion. Every field.
+# WriteRight - A Chrome Extension that Rewrites Anything
+
+A Chrome extension that rewrites anything. Your way.  
+Install WriteRight and a tiny gold ✦ bubble will pop up next to every text field on the web.  
+Pick a tone — Professional, Cold Email, Follow-up, Concise, and five more — and apply the rewrite with one click.  
+Works seamlessly with Gmail, Outlook, LinkedIn, Slack, Notion — every field.
+
+---
+
+## 🛡️ Badges
+
+![Made with JavaScript](https://img.shields.io/badge/Made%20with-JavaScript-yellow?style=for-the-badge&logo=javascript)  
+![Chrome Extension](https://img.shields.io/badge/Platform-Chrome%20Extension-blue?style=for-the-badge&logo=google-chrome)  
+![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)  
+![Status: Active](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)  
+![Pull Requests Welcome](https://img.shields.io/badge/PRs-Welcome-orange?style=for-the-badge)
+
+---
+
+## ✨ Features
+
+### 🔹 One Bubble. Every Situation.
+Choose from 8 different tones to match your context:
+- **Professional** – Business emails, work comms  
+- **Casual** – Friends, Slack, texts  
+- **Formal** – Legal, official, academic  
+- **Friendly** – Warm personal messages  
+- **Persuasive** – Pitches, sales, proposals  
+- **Cold Email** – First-time outreach  
+- **Follow-up** – Nudge without being pushy  
+- **Concise** – Cut the fluff  
+
+### 🔹 Rewrite in One Click
+When you type in any text field, a ✦ gold bubble appears.  
+Select a tone (e.g., Professional, Follow-up, Concise) and hit **Apply** — your text is instantly rewritten.
+
+### 🔹 Seamless Integration
+Compatible with:
+- Gmail  
+- Outlook  
+- LinkedIn  
+- Slack  
+- Notion  
+
+---
 
 ## 🚀 Install WriteRight Extension (Manual Setup)
 
@@ -23,3 +66,18 @@ Follow these steps to get started:
 - Type at least 10 characters.
 - Look for the ✨ gold icon at the bottom‑right of the field — that means WriteRight is active!
 
+---
+
+## 📸 Screenshots
+
+### Extension Setup
+![Install Instructions](images/install.png)
+
+### Bubble in Action
+![Gold Bubble Next to Text Field](images/bubble.png)
+
+### Tone Selection
+![Tone Options](images/tones.png)
+
+### Email Rewrite Example
+![Rewrite Demo](images/rewrite.png)
