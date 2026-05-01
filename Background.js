@@ -2,7 +2,6 @@
 // Uses Groq API with llama-3.3-70b-versatile model
 
 const GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions";
-const GROQ_API_KEY = "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";
 const GROQ_MODEL   = "llama-3.3-70b-versatile";
 
 const MODE_PROMPTS = {
